@@ -1,5 +1,6 @@
+// personnal acceskey from unsplash account
 const accessKey="vi4Z--NytV0cLN_e_Vn-374AhqHKDtMl726526VMCpY"
-
+// accessing the elements using it's id
 const searchForm= document.getElementById("search-form")
 const searchBox =document.getElementById("search-box")
 const searchResult =document.getElementById("search-result")
@@ -9,6 +10,8 @@ const showMore=document.getElementById("show-more-btn")
 
 let keyword=""
 let page=1;
+
+//creating function for image search
 async function  searchImages(){
     keyword= searchBox.value;
     const url= `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}&per_page=9`;
@@ -34,7 +37,7 @@ async function  searchImages(){
      })
      showMore.style.display="block"
 }
-
+// calling the function on clicking search button
 searchForm.addEventListener("submit",(e)=>{
     e.preventDefault();
     page=1;
