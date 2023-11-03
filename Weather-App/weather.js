@@ -1,5 +1,7 @@
-//const apikey= "d503fe2fb88dabed26830f3563c4cb5e";
-const apikey ="773acb00264d1224e48f50b897b968eb";
+//using apikey from open weather map by cretaing account 
+//const apikey= "d503fe2fb88dabed26830f3563c4cb5";
+const apikey ="773acb00264d1224e48f50b897b968e";
+
 const apiUrl ="https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 // accessing all the fields using query selector
 const searchBox= document.querySelector(".search input")
